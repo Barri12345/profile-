@@ -1,0 +1,87 @@
+:root {
+  --hitam: #1F1F1F;
+  --putih: #F8F7F9;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--hitam);
+  color: var(--putih);
+}
+.list li {
+  color: gray;
+  list-style: square;
+}
+
+.container {
+  width: 1152px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.left h3 {
+  font-size: 0.8rem;
+}
+
+.left h1 {
+  font-size: 1.5rem;
+}
+
+.left p {
+  color: gray;
+}
+
+.right img {
+  width: 30rem;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+footer {
+  background-color:var(--putih);
+  margin-top: 10rem;
+}
+footer p {
+  color: var(--hitam);
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .section img {
+    display: none;
+  }
+}
